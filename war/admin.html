@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<title>admin</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+		<script type="text/javascript" src="js/prototype.js"></script>
+		<script type="text/javascript" src="js/admin_prototype.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/admin.css" />
+	</head>
+
+  	<body>
+		<form action="/admin/add" method="post">
+			<h2>new list</h2>
+			<div>
+				<label for="listname">listname</label>
+				<input type="text" id="listname" name="listname"/>
+			</div>
+
+			<div>
+				<label for="dateClosed">closed on</label>
+				<input id="dateClosed" type="date" name="dateClosed"/>
+			</div>
+
+			<div>
+				<input type="submit" value="add"/>
+			</div>
+		</form>
+
+		<form action="/admin/add" method="post">
+			<h2>new listitem</h2>
+			<div>
+				<label for="listname_additem">listname</label>
+				<select class='list_select' id="listname_additem" name="listname"></select>
+			</div>
+
+			<div>
+				<label for="itemname">itemname</label>
+				<input type="text" id="itemname" name="itemname"/>
+			</div>
+
+			<div>
+				<label for="itemauthor">itemauthor</label>
+				<input type="text" id="itemauthor" name="itemauthor"/>
+			</div>
+
+			<div>
+				<label for="itemurl">itemurl</label>
+				<input type="url" id="itemurl" name="itemurl"/>
+			</div>
+
+			<div>
+				<input type="submit" value="add"/>
+			</div>
+		</form>
+
+		<form action="/admin/delete" method="post">
+			<h2>remove list</h2>
+			<div>
+				<label for="listname_delete">listname</label>
+				<select class='list_select' id="listname_delete" name="listname"></select>
+			</div>
+
+			<div>
+				<input type="submit" value="delete"/>
+			</div>
+		</form>
+	</body>
+</html>

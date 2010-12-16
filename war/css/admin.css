@@ -1,0 +1,39 @@
+body {
+	color: gray;
+	font-family: courier new;
+}
+
+h2 {
+	font-size: 22px;
+	margin-top: 5px;
+}
+
+form  {
+	border: dashed 3px gray;
+	padding: 15px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	
+} 
+
+label {
+	display: block;
+	float: left;
+	width: 100px;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.input {
+	float: right;
+}
+
+.small {
+	width: 50px;
+}
+
+input {
+	border: solid 1px gray;
+}

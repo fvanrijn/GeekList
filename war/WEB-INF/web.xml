@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+	<context-param>
+		<param-name>admin</param-name>
+		<param-value>fvanrijn@gmail.com</param-value>
+	</context-param>
+  
+  <!-- list viewing servlet -->
+  <servlet>
+    <servlet-name>viewlist</servlet-name>
+    <servlet-class>geeklist.servlet.ViewListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewlist</servlet-name>
+    <url-pattern>/list/*</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Voting servlet -->
+  <servlet>
+    <servlet-name>castvote</servlet-name>
+    <servlet-class>geeklist.servlet.CastVoteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>castvote</servlet-name>
+    <url-pattern>/vote/*</url-pattern>
+  </servlet-mapping>  
+  
+  <!-- Management servlet -->
+  <servlet>
+    <servlet-name>managelist</servlet-name>
+    <servlet-class>geeklist.servlet.ManageListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>managelist</servlet-name>
+    <url-pattern>/admin/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>managelist</servlet-name>
+    <url-pattern>/signout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>managelist</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+    
+
+</web-app>

@@ -1,0 +1,83 @@
+/* basic styles */
+body {
+	font-family: courier new;
+	font-size: 18px;
+	color: gray;
+}
+
+h1 {
+	font-size: 32px;
+	color: gray;
+	text-align: center;
+	
+}
+
+h2 {
+	font-size: 22px;
+	color: lightgray;
+	font-style: italic;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin-bottom: 8px;
+}
+
+li.list, li.list_item div.title {
+	cursor: pointer;	
+}
+
+a {
+	color: gray;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* page structure */
+#container {
+	width: 800px;
+	margin: auto;
+	border: dashed 3px lightgray;
+	padding: 15px;
+}
+
+#header {
+	border-bottom: dashed 3px lightgray;
+	margin-bottom: 15px;
+	text-align: right;
+}
+
+#list_overview {
+	width: 200px;
+	min-height: 300px;
+	border-right: dashed 3px lightgray;
+	float: left;
+}
+
+#list_detail {
+	width: 500px;
+	float: left;
+	padding-left: 30px;
+}
+
+#footer {
+	clear: both;
+}
+
+#overlay {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	top: 400;
+	left: 400;	
+	border: dotted 3px darkgray;
+	z-index: 1;
+	background: white;
+}
